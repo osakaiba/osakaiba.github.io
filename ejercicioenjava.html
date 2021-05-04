@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div>	<h1>Uso de boleanos</h>
+		<p>
+
+
+<script type="text/javascript">
+
+	function entre_3_y_8 (x) {
+
+		return (3 <= x) && (x <= 8);
+	};
+
+for (var i=1;i<11;i++){
+
+	document.write("entre_3_y_8("+i+") => "+ entre_3_y_8(i)+"<p>");
+};
+
+
+
+</script>		
+	</div>
+
+	<div>
+
+	<script type="text/javascript">
+
+		for (var i = 0; i<10; i++){
+	document.write (i);
+			
+		};
+document.write ('<h2>JA JA JA</h><p>');
+var dado = Math.random();
+if (dado <= 0.5) {
+
+	document.write(dado + " es menor o igual que 0.5 <p>");
+}
+
+
+else {
+
+	document.write(dado + " es mayor que 0.5 <p>");
+
+}
+
+fecha = new Date();
+
+document.write(fecha.getHours()+"<p>"); 
+
+document.write(fecha.getDay()+"<p>"); 
+
+document.write(fecha.getMinutes()+"<p>"); 
+document.write("El euro es. \u20ac");
+
+function mostrar_fecha(){
+var c=document.getElementById("cuadro").innerHTML= new Date();
+}
+
+function vaciar(){
+	document.getElementById("entrada").value="";
+}
+
+function sumatorio (){
+
+	var num = document.getElementById("entrada");
+	var lista= num.value.split(",");
+	var i=0, acc=0;
+
+	while(i < lista.length){
+		acc= acc +(+lista[i]);
+		i++;
+	}
+	num.value=acc;
+
+}
+
+	</script>
+
+
+	
+<div id="cuadro"></div>
+<script type="text/javascript">
+	mostrar_fecha();
+</script>
+<div id="potencia">
+	<h1>6 elevado a la terceraponetncia es</h1>
+
+	<script type="text/javascript">
+
+	var res=1;
+	var n=3;
+	while (n!==0){
+	res= res*6;
+	n= n-1;
+	
+	}
+
+document.write("El resultado es "+res);
+	</script>
+
+</div>
+<div id="calculadora">
+	<h3>Cálculo de sumatoria</h3>
+<input id="entrada" type="text" ondblclick="vaciar()">
+<button  onclick="sumatorio()">&Sigma;x</button>
+
+</div>
+</body>
+script
+</html>
